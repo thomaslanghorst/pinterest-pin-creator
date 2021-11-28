@@ -1,0 +1,4 @@
+access_token_path: .access_token
+schedule_file_path: "/path/to/schedule.csv"
+browser_path: "/path/to/a/browser/application"
+redirect_port: 8085
