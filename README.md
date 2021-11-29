@@ -7,7 +7,7 @@ The project uses the [Pinterest API v5](https://developers.pinterest.com/docs/ap
 # Setup
 To setup the project you first need prepare the `config.yaml` and `schedule.csv` files, as well as set the `APP_ID` and `APP_SECRET` environment variables.
 
-## config.yaml setup
+## 1. config.yaml setup
 Execute the following commend to prepare your config.yaml file.
 ```
 mv config.yaml.example config.yaml
@@ -21,7 +21,7 @@ redirect_port: your_redirect_port
 ```
 The redirect port must be the same that you set during your [Pinterest Application setup](https://developers.pinterest.com/docs/api/v5/#section/Configure-the-redirect-URI-required-by-this-code.)
 
-## schedule.csv setup
+## 2. schedule.csv setup
 Same as for your config file, you need to execute this command to prepare your schedule file.
 ```
 mv schedule.csv.example schedule.csv
@@ -41,7 +41,7 @@ created;timestamp;board;title;description;filePath;link
 - `filePath`: path to the image file for the pin
 - `link`: link to the external URL of the pin
 
-## App ID and App Secret
+## 3. App ID and App Secret
 In order to create an access token you need to provide your [app ID and app secret](https://developers.pinterest.com/docs/api/v5/#section/Register-your-app-and-get-your-app-id-and-app-secret-key) as environment variables.
 
 ```
@@ -52,7 +52,7 @@ export APP_SECRET=<your app secret>
 # Running the code
 While running the application you need to provide the `config.yaml` file as an argument.
 
-```go
+```
 go run main.go config.yaml
 ```
 
